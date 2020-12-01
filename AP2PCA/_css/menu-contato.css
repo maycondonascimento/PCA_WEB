@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+h2 {
+    margin: .3em 0em .4em .2em;
+    padding-top: .3em;
+    font-size: 3.2em;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+}
+
+p#info-contato {
+    margin: .3em 0em 1.2em .5em;
+    font-size: 1.8em;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+    width: 24em;
+}
+
+label {
+    margin: .3em 0em .1em .5em;
+    font-size: 1.2em;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+    display: block;
+}
+
+input#carquivo {
+    border: none;
+    font-size: 1.4em;
+    margin: .1em 0em .4em .1em;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+    width: 23em;
+}
+
+input#carquivo:hover {
+    box-shadow: rgba(255, 255, 255, .2) 0em 0em .8em;
+}
+
+option{
+    font-size: 1.2em;
+
+}
+
+select {
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+
+input, textarea {
+    margin: .1em 0em 0em .4em;
+    padding: .4em;
+    border: .1em solid #000000;
+    width: 30em;
+    color: #716c6c;
+    font-size: 1.2em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0em 0em .8em;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0em 0em .8em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0em 0em .8em;
+}
+textarea {
+    width: 50em;
+    height: 15em;
+    max-width: 40em;
+    line-height: 1.8em;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border: .1em solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0em 0em .8em;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0em 0em .8em;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0em 0em .8em;
+}
+
+.submit input {
+    width: 10em;
+    height: 4em;
+    background-color: rgba(14,78,149,.9);
+    color: rgba(255,255,255,.6);
+    font-size: 1.2em;
+    transition: background-color 1.5s;
+    border-radius: .3em;
+    border-color: rgba(14,78,149,.9);
+    moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    margin-left: .7em;
+}
+
+.submit input:hover {
+    background-color: rgba(221,12,42,.6);
+    border-color: rgba(221,12,42,.2);
+    box-shadow: rgba(255, 255, 255, .2) 0em 0em .8em;
+}
+
+aside#lateral{
+    display: block;
+    width: 10em;
+    height: 5em;
+    float: right;
+    position: relative;
+    padding: 0px;
+    margin-top: -7em ;
+    margin-right: 32.6em;
+    }
+
+aside#lateral p {
+    margin: 0em 0em 0em 0em;
+    font-size: 1.5em;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+    width: 24em;
+}
+
+aside#lateral h2 {
+    margin: 0em 0em .1em 0em;
+    font-size: 2.2em;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+}
+
+#map-canvas {
+    height: 25em;
+    width: 40em;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: .2em .2em .4em rgba(255,255,255,0.5);
+}
+
+aside#lateral2{
+    display: block;
+    width: 10em;
+    height: 5em;
+    float: right;
+    position: relative;
+    padding: 0em;
+    margin-top: 30em ;
+    margin-right: 32.6em;
+}
+
+aside#lateral2 p {
+    margin: 0em 0em 0em 0em;
+    font-size: 1.5em;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+    width: 24em;
+}
+
+aside#lateral2 h2 {
+    margin: 0em -2em .1em 0em;
+    font-size: 2.2em;
+    font-family: 'FonteLogo', sans-serif;
+    color: rgba(255,255,255, .9);
+    text-shadow: .1em .1em .2em rgba(9,98,87, .9);
+}
+
+#map-canvas2 {
+    height: 25em;
+    width: 40em;
+    margin-top: 0em;
+    padding: 0em;
+    box-shadow: .2em .2em .4em rgba(255,255,255,0.5);
+}
+
+h1#firstHeading {
+    font-size: 1.6em;
+}
+
+div#bodyContent p {
+    font-size: 1.2em;
+    color: cadetblue;
+    text-shadow: 0em 0em 0em rgba(255,255,255, 1);
+}
+
+

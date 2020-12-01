@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Webnáticos - Soluções em energia Solar</title>
+
+    <link rel="stylesheet" type="text/css" href="_css/estilo-frame-produtos.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/slide-produto.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/menu-produtos.css"/>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="_js/responsiveslides.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<section id="corpo-principal">
+</section>
+<div class="callbacks_container">
+    <ul class="rslides" >
+        <li><img src="_imagens/_slide/_produtos/1.jpg" alt="foto slide"></li>
+        <li><img src="_imagens/_slide/_produtos/2.jpg" alt="foto slide"></li>
+        <li><img src="_imagens/_slide/_produtos/3.jpg" alt="foto slide"></li>
+        <li><img src="_imagens/_slide/_produtos/4.jpg" alt="foto slide"></li>
+        <li><img src="_imagens/_slide/_produtos/5.jpg" alt="foto slide"></li>
+        
+    </ul>
+</div>
+
+<script>
+    $(function() {
+        $(".rslides").responsiveSlides({
+            auto: true,
+            nav: true,
+            pager: false,
+            pause: false,
+            maxwidth: 1028,
+            speed: 1400,
+            namespace: "callbacks",
+            before: function(){
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function(){
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

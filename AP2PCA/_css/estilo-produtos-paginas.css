@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*-------------------Corpo do Site-------------------*/
+body {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    width: 100%;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1028px;
+    height: 86em;
+    margin: -2em auto 0em auto;
+    box-shadow: 0em .1em 0.4em .4em rgba(255,255,255,.4);
+    background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(0,0,0,0.4);
+    position: relative;
+}
+
+img,
+picture,
+video,
+embed {
+    max-width: 100%;
+}
+/*-------------------Fim Corpo do Site-------------------*/
+
+/*-------------------Imagem de Fundo do Site-------------------*/
+#fundo-externo {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    position: relative; /* criamos um contexto para posicionamento */
+}
+
+#fundo {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 1920px;
+}
+
+#fundo img {
+    width: 100%;
+    position: absolute;
+
+}
+/*-------------------Fim Imagem de Fundo do Site-------------------*/
+
+/*-------------------Cabeçalho Site-------------------*/
+
+div#cabecalho {
+    max-width: 1028px;
+    margin: .6em auto 2.6em auto;
+    box-shadow: 0em .1em 0.4em .4em rgba(255,255,255,.4);
+    background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(0,0,0,.4);
+    position: relative;
+    height: 14.3em;
+}
+
+.logo {
+    float: left;
+    height: 10.3em;
+    width: 15em;
+    margin: 2em auto auto 3em;
+}
+
+.menu li:hover {
+    background: #868282;
+    box-shadow: 0em .1em 0.8em .8em rgba(255,255,255,.4);
+}
+.menu li:hover a{
+    text-shadow: .1em .1em .1em rgba(255,255,255, .6);
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+.menu {
+    width: 64.468085106383%; /*840px / 1128px */
+    float: right;
+}
+
+.menu ul {
+    float: right;
+    margin-right: 1.1em;
+}
+
+.menu li {
+    font-size: 1em;
+    margin-left: .9em;
+    margin-top: 0.6em;
+    display: inline-block;
+    padding: .2em .6em .2em .6em;
+    transition: background-color 1.6s;
+}
+
+.menu li a {
+    color: #baf7b5;
+    text-shadow: .1em .1em .1em rgba(0,0,0, .6);
+    font-size: 1.8em;
+
+}
+/*-------------------Fim Cabeçalho Site-------------------*/
+
+/*-------------------Rodapé Site-------------------*/
+
+div#rodape {
+
+    max-width: 1028px;
+    margin: 0em auto 0em auto;
+    box-shadow: 0em .1em 0.4em .4em rgba(255,255,255,.4);
+    background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(0,0,0,.4);
+    position: relative;
+    height: 7.3em;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: wheat;
+    font-size: 1.1em;
+    margin-top: .4em;
+}
+
+.footer p#juli {
+    font-size: 1.2em;
+}
+
+.footer p#logradouro {
+    font-size: 1.6em;
+    font-family: "Bookman", Georgia, "Times New Roman", serif;
+    padding-top: .1em;
+    color: wheat;
+    margin-bottom: .1em;
+}
+
+.footer a{
+    color: #a1f99a;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------Fim Rodapé Site-------------------*/

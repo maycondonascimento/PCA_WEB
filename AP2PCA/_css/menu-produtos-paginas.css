@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+.wrap {
+    max-width: 1028px;
+    margin: 0 auto;
+}
+
+.nav-aberta {
+    box-shadow: 0em .1em 0.1em .1em rgba(255,255,255,.4);
+    background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(0,0,0,0.4);
+    z-index: 200;
+    position: relative;
+    width: 20%;
+    font-size: 2.2em;
+    float: left;
+    font-family: 'FonteLogo', sans-serif;
+}
+
+.nav-aberta ul {
+    padding: 1em;
+}
+
+.listaNav li {
+    #display: block;
+    #width: 100%;
+    #margin: 1em 2em 1em 0;
+
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.listaNav li a {
+    text-decoration: none;
+    color: rgba(255,255,255, 1);
+    text-shadow: .1em .2em .2em rgba(9,98,87, .9);
+    padding: 0.5em 0 0.5em 0.2em;
+    display: block;
+    color: #FFF;
+
+}
+
+.listaNav li a:hover {
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0em .1em 0.1em .1em rgba(255,255,255,.4);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+iframe#frame-prod-principal {
+    width: 80em;
+    height: 85em;
+    border: none;
+    overflow: hidden;
+    margin-left: 2em;
+}
+
+
+iframe#frame-prod-principal::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .wrap {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .nav-aberta {
+        width: 175px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0em .1em 0.1em .1em rgba(255,255,255,.4);
+        background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+        background: rgba(0,0,0,0.4);
+    }
+
+
+    .nav-aberta ul {
+        padding: .5em;
+        margin: 0;
+        background: #444;
+        box-shadow: 0em .1em 0.1em .1em rgba(255,255,255,.4);
+        background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+        background: rgba(0,0,0,0.4);
+    }
+
+    .listaNav li {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .listaNav li a {
+        padding: 0.5em 0 0.5em 0.2em;
+        display: block;
+        color: #FFF;
+    }
+
+
+    .nav-toggle {
+        position: absolute;
+        top: 0;
+        right: -110.5px;
+        color: rgba(255,255,255, 1);
+        text-shadow: .1em .2em .2em rgba(9,98,87, .9);
+        cursor: pointer;
+        width: 110px;
+        height: 42px;
+        z-index: 1000;
+        display: block;
+        box-shadow: 0em .1em 0.1em .1em rgba(255,255,255,.4);
+        background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+        background: rgba(0,0,0,0.4);
+        padding: 3px 6px 6px 12px;
+    }
+
+    .nav-toggle:hover {
+        background: rgba(9,98,87,0.4);
+        box-shadow: 0em .1em 0.1em .1em rgba(255,255,255,.2);
+}
+
+}

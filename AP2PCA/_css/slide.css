@@ -1,0 +1,77 @@
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0em .6em 0.8em .2em rgba(188,187,182,.4);;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    display: none;
+    width: 100%;
+    margin: 1em auto 0em auto;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+/*--------------------------------------*/
+.events {
+    list-style: none;
+}
+
+.callbacks_container {
+    margin: 1em auto 0em auto;
+    position: relative;
+    width: 90%;
+}
+
+.callbacks {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.callbacks_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 52%;
+    left: 0;
+    opacity: 0.5;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 25px;
+    background: transparent url("../_imagens/_slide/themes.gif") no-repeat left top;
+    margin-top: -45px;
+}
+
+.callbacks_nav:active {
+    opacity: 1.0;
+}
+
+.callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}

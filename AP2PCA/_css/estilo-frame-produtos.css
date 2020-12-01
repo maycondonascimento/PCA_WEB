@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+section {
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 34.2em;
+    position: absolute;
+    margin-top: -2em;
+}
+
+.container {
+    width: 100%;
+}
+
+/*
+.min-produtos img {
+    width: 8em;
+    height: 6em;
+}
+
+.min-produtos ul {
+    position: relative;
+    float: left;
+}
+
+.min-produtos li {
+    display: inline-block;
+    margin-right: .5em;
+    margin-top: .3em;
+}
+
+.min-produtos li:last-child {
+    margin-right: 0;
+}
+
+.min-produtos li:first-child {
+    margin-left: -3em;
+}*/
+

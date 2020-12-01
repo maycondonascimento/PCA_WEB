@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Webnáticos - Soluções em energia Solar</title>
+
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/slide.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/menu-home.css"/>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="_js/responsiveslides.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="pt-BR" />
+    <META NAME="ROBOTS" CONTENT="all,follow">
+    <META NAME="GOOGLEBOT" CONTENT="all,follow">
+    <meta name="target_country" content="br" />
+    <meta name="country" content="Brazil" />
+    <meta name="city" content="Florianopolis" />
+    <meta name="author" content="Webnaticos">
+    <meta name="copyright" content="Copyright 2020">
+
+</head>
+
+<body>
+
+<div id="fundo-externo">
+    <div id="fundo">
+        <img src="_imagens/_fundo/fundo.jpg" alt="fundo site" />
+    </div>
+</div>
+
+<div id="cabecalho">
+    <header class="header">
+        <a href="index.html"><img src="_imagens/_banner/logo2.png" alt="logo site" class="logo"/></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="container clearfix">
+
+
+    <div class="callbacks_container">
+        <ul class="rslides" >
+            <li><a href="empresa.html"><img src="_imagens/_slide/slide01.jpg" alt="banner foto1"></a></li>
+            <li><a href="produtos.html"><img src="_imagens/_slide/slide02.jpg" alt="banner foto2"></a></li>
+            <li><a href="projetos.html"><img src="_imagens/_slide/slide03.jpg" alt="banner foto3"></a></li>
+        </ul>
+    </div>
+
+    <script>
+        $(function() {
+            $(".rslides").responsiveSlides({
+                auto: true,
+                nav: true,
+                pager: false,
+                pause: false,
+                maxwidth: 1028,
+                speed: 1400,
+                namespace: "callbacks",
+                before: function(){
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function(){
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+
+    <p id="bem-vindo">
+        Seja bem vindo ao nosso portal. A <a href="empresa.html">Webnáticos,</a> Soluções em energia solar tem o prazer em recebe-lo!<br><br>
+    </p>
+    <ul id="album-fotos">
+        <a href="empresa.html"><li id="fotos01"><span>Empresa</span></li></a>
+        <a href="produtos.html"><li id="fotos02"><span>Produtos</span></li></a>
+        <a href="projetos.html"><li id="fotos03"><span>Projetos</span></li></a>
+        <a href="contato.html"><li id="fotos04"><span id="contato">Contato</span></li></a>
+    </ul>
+    <p id="bem-vindo">
+        Por que investir em um sistema de energia solar? Para quem não entende pode até parecer complicado, mas confiando na maior empresa de Energia Solar do Brasil, fica muito fácil. <br><br>
+
+        <img src="_imagens/_banner/menuhome.png" alt="banner foto1">
+        <br><br>
+
+        * Nossa experiência, em mais de 16652 obras entregues, nos torna referência em instalações de sistema de energia solar e nos credencia a disponibilizar unidades espalhadas por todo o Brasil trabalhando nos segmentos Industrial, Comercial, Residencial e Rural. <br><br>
+
+        Energia solar corresponde à energia proveniente da luz e do calor emitidos pelo Sol. Essa fonte de energia pode ser aproveitada de forma fotovoltaica ou térmica, gerando energia elétrica e térmica, respectivamente. Por ser considerada uma fonte de energia limpa, a energia solar é uma das fontes alternativas mais promissoras para obtenção energética.<br><br>
+
+        A energia solar, como o próprio nome indica, refere-se à energia cuja fonte é o Sol. Sua captação pode ser feita por meio de diversas tecnologias, como painéis fotovoltaicos, usinas heliotérmicas e aquecedores solares. Basicamente, ao ser captada, a luz solar é convertida em energia. Nos painéis fotovoltaicos e nas usinas heliotérmicas, a luz solar é convertida em energia elétrica e térmica. Já no aquecimento solar, a luz solar é convertida em energia térmica.<br><br>
+        
+        Entre em <a href="contato.html">contato</a> e faça um orçamento sem compromisso. Teremos o maior prazer em atendê-lo!
+        <br><br>
+    </p>
+
+</div>
+
+<div id="rodape">
+    <footer class="footer">
+        <p id="logradouro"><b>Rua Professor José de Souza Herdy, 1160 - Jardim Vinte e Cinco de Agosto, Duque de Caxias - RJ, 25071-202</b></p>
+        <p>&copy;Copyright 2020</p>
+        <p id="juli"></p><a href="#" id="link-rodape">Developed by - Grupo Webnáticos</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
